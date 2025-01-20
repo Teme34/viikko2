@@ -47,7 +47,7 @@ public class App {
                             System.out.print("Kuinka monta km/h haluat kiihdyttää? ");
                             int acceleration = Integer.parseInt(sc.nextLine());
                             if (acceleration < 0) {
-                                System.out.print("Nopeuden täytyy olla positiivinen luku. ");
+                                System.out.print("Nopeuden täytyy olla positiivinen luku.\n");
                                 break;
                             }
                             newCar.accelerate(acceleration);
@@ -56,7 +56,7 @@ public class App {
                             System.out.print("Kuinka monta km/h haluat hidastaa?? ");
                             int deceleration = Integer.parseInt(sc.nextLine());
                             if (deceleration < 0) {
-                                System.out.print("Nopeuden täytyy olla positiivinen luku. ");
+                                System.out.print("Nopeuden täytyy olla positiivinen luku.\n");
                                 break;
                             }
                             newCar.decelerate(deceleration);
