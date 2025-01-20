@@ -12,10 +12,10 @@ public class App {
         Car newCar = new Car();
 
         Scanner sc = new Scanner(System.in);
-            System.out.println("Anna auton merkki:");
+            System.out.println("Anna auton merkki: ");
             String brand = sc.nextLine();
             newCar.setBrand(brand);
-            System.out.println("Anna auton malli:");
+            System.out.println("Anna auton malli: ");
             String model = sc.nextLine();
             newCar.setModel(model);
 
