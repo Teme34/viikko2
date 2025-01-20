@@ -19,7 +19,7 @@ public class Car {
     }
 
     public void status() {
-        System.out.println("Auto: " + brand + " " + model + ", Nopeus: " + speed + " km/h");
+        System.out.println("  Auto: " + brand + " " + model + ", Nopeus: " + speed + " km/h");
     
     }
 
@@ -30,7 +30,11 @@ public class Car {
 
     public void decelerate(int deceleration) {
         speed = speed - deceleration;
+        if (speed < 0) {
+            speed = 0;
+        }
         this.speed = speed;
+        
     }
 
      public void setBrand(String brand) {
@@ -59,6 +63,5 @@ public class Car {
 
        
 }
-
 
 

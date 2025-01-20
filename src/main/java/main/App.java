@@ -12,7 +12,7 @@ public class App {
         Car newCar = new Car();
 
         Scanner sc = new Scanner(System.in);
-            System.out.println("Anna auton merkki: ");
+            System.out.print("Anna auton merkki: ");
             String brand = sc.nextLine();
             newCar.setBrand(brand);
             System.out.print("Anna auton malli: ");
@@ -21,7 +21,7 @@ public class App {
 
         boolean exit = false;
         while(!exit) {
-            System.out.print("1) Näytä auton tila");
+            System.out.print("1) Näytä auton tila\n");
             System.out.println("2) Muokkaa auton merkkiä ja mallia");
             System.out.println("3) Kiihdytä autoa");
             System.out.println("4) Hidasta autoa");
@@ -47,16 +47,16 @@ public class App {
                             System.out.print("Kuinka monta km/h haluat kiihdyttää? ");
                             int acceleration = Integer.parseInt(sc.nextLine());
                             if (acceleration < 0) {
-                                System.out.print("Nopeuden täytyy olla positiivinen luku. ");
+                                System.out.print("Nopeuden täytyy olla positiivinen luku.\n");
                                 break;
                             }
                             newCar.accelerate(acceleration);
                             break;
                         case 4:
-                            System.out.print("Kuinka monta km/h haluat hidastaa?? ");
+                            System.out.print("Kuinka monta km/h haluat hidastaa? ");
                             int deceleration = Integer.parseInt(sc.nextLine());
                             if (deceleration < 0) {
-                                System.out.print("Nopeuden täytyy olla positiivinen luku. ");
+                                System.out.print("Nopeuden täytyy olla positiivinen luku.\n");
                                 break;
                             }
                             newCar.decelerate(deceleration);
