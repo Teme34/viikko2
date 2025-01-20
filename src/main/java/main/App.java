@@ -12,7 +12,7 @@ public class App {
         Car newCar = new Car();
 
         Scanner sc = new Scanner(System.in);
-            System.out.println("Anna auton merkki: ");
+            System.out.print("Anna auton merkki: ");
             String brand = sc.nextLine();
             newCar.setBrand(brand);
             System.out.print("Anna auton malli: ");
@@ -21,7 +21,7 @@ public class App {
 
         boolean exit = false;
         while(!exit) {
-            System.out.print("1) Näytä auton tila");
+            System.out.print("1) Näytä auton tila\n");
             System.out.println("2) Muokkaa auton merkkiä ja mallia");
             System.out.println("3) Kiihdytä autoa");
             System.out.println("4) Hidasta autoa");
