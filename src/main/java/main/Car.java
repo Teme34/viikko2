@@ -48,7 +48,7 @@ public class Car {
     public String getModel() {
         return model;
     }
-    // 
+    
     public void setSpeed(int speed) {
         this.speed = speed;
     }
