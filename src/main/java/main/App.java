@@ -15,13 +15,13 @@ public class App {
             System.out.println("  Anna auton merkki: ");
             String brand = sc.nextLine();
             newCar.setBrand(brand);
-            System.out.println(" Anna auton malli: ");
+            System.out.println("\nAnna auton malli: ");
             String model = sc.nextLine();
             newCar.setModel(model);
 
         boolean exit = false;
         while(!exit) {
-            System.out.println(" 1) Näytä auton tila\n2) Muokkaa auton merkkiä ja mallia\n3) Kiihdytä autoa\n4) Hidasta autoa\n0) Lopeta ohjelma");
+            System.out.println("\n1) Näytä auton tila\n2) Muokkaa auton merkkiä ja mallia\n3) Kiihdytä autoa\n4) Hidasta autoa\n0) Lopeta ohjelma");
 // If statement is from the given example source code
             if(sc.hasNext()) {
                     int i = 0;
