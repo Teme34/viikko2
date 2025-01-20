@@ -53,7 +53,7 @@ public class App {
                             newCar.accelerate(acceleration);
                             break;
                         case 4:
-                            System.out.print("Kuinka monta km/h haluat hidastaa?? ");
+                            System.out.print("Kuinka monta km/h haluat hidastaa? ");
                             int deceleration = Integer.parseInt(sc.nextLine());
                             if (deceleration < 0) {
                                 System.out.print("Nopeuden täytyy olla positiivinen luku.\n");
